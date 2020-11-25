@@ -1,0 +1,13 @@
+{
+  "name": "com.filipdufka.kiwi-projectile",
+  "version": "1.0.0",
+  "displayName": "Kiwi Projectile",
+  "description": "Component class to manage projectiles and shots.",
+  "keywords": [
+    "projectiles"
+  ],
+  "author": {
+    "name": "Filip Dufka",
+    "email": "filipdufka@gmail.com"
+  }
+}
