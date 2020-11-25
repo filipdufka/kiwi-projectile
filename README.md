@@ -1,2 +1,2 @@
-# kiwi-projectile
-Unity Package for managing coroutines and timed actions.
+# Kiwi Projectile
+Unity Package for managing projectiles in simple manner.
