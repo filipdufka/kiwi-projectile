@@ -6,11 +6,18 @@ public class KiwiProjectile : MonoBehaviour {
     Vector3 origin;
     Vector3 direction;
     float position;
-    float speed = 100.0f;
+    public float speed = 100.0f;
     float life = 3.0f; //in seconds
-    float precision = 0.9f;
+    public float precision = 0.9f;
     float shotDelta { get { return Time.fixedDeltaTime * speed; } }
-    float spawnOffset = 1.0f;
+    public float spawnOffset = 0.1f;
+
+    public static KiwiProjectile CreateProjectile(Vector3 origin, Vector3 direction) {
+        GameObject go = new GameObject("Projectile");
+        KiwiProjectile kp = go.AddComponent<KiwiProjectile>();
+        kp.SetShot(origin, direction);
+        return kp;
+    }
 
     private void Start() {
     }
@@ -27,9 +34,9 @@ public class KiwiProjectile : MonoBehaviour {
         RaycastHit hit;
         if(Physics.Raycast(bullet, direction, out hit, shotDelta)) {
             position = Vector3.Distance(hit.point, origin);
-
+            Debug.Log(position);
             // TODO: Check hit layer
-            Destroy(gameObject);
+            //Destroy(gameObject);
             
             //ILivingThing livingThing;
             //if((livingThing = hit.collider.GetComponentInParent<ILivingThing>()) != null) {
