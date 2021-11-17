@@ -1,6 +1,6 @@
 {
   "name": "com.filipdufka.kiwi-projectile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Kiwi Projectile",
   "description": "Component class to manage projectiles and shots.",
   "keywords": [
