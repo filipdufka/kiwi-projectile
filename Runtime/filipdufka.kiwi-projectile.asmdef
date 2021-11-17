@@ -1,5 +1,6 @@
 {
     "name": "filipdufka.kiwi-projectile",
+    "rootNamespace": "FruitBowl",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
